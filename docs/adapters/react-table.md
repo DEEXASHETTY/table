@@ -14,6 +14,12 @@ import { useReactTable } from '@tanstack/react-table'
 function App() {
   const table = useReactTable(options)
 
-  // ...render your table
+  const columns = [
+  { Header: 'Store Group', accessor: 'storeGroup' },
+  { Header: 'Short Number', accessor: 'shortNumber' },
+  { Header: 'Store Name', accessor: 'storeName' },
+  { Header: 'Access', accessor: 'access' },
+  { Header: 'Search', accessor: 'search' },
+];
 }
 ```
